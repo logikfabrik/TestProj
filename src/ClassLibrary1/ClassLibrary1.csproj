@@ -11,6 +11,7 @@
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Description>This is a test</Description>
+    <PackageId>ClassLib1TestProj1</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
