@@ -6,7 +6,7 @@
     public sealed class WorkspacesClientTests
     {
         [Theory]
-        [FileData(@".\Workspaces\.testdata\Get_For_Workspace_That_Exists_Should_Return_The_Workspace.json")]
+        [FileData(@"Workspaces/.testdata/Get_For_Workspace_That_Exists_Should_Return_The_Workspace.json")]
         public async Task Get_For_Workspace_That_Exists_Should_Return_The_Workspace(string responseJson)
         {
         }
