@@ -42,6 +42,6 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         shell: powershell
         run: |
-          .\.sonar\scanner\dotnet-sonarscanner begin /k:"logikfabrik_TestProj" /o:"logikfabrik" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /v=0.0.0.${{ github.run_number }}
+          .\.sonar\scanner\dotnet-sonarscanner begin /k:"logikfabrik_TestProj" /o:"logikfabrik" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /v:"0.0.0.${{ github.run_number }}"
           dotnet build src/ClassLibrary1.sln -c Release
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
