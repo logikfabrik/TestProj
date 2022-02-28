@@ -12,7 +12,7 @@
         }
 
         [Theory]
-        [FileData(@".\Workspaces\.testdata\List_Should_Return_The_Workspaces.json")]
+        [FileData(@"Workspaces\.testdata\List_Should_Return_The_Workspaces.json")]
         public async Task List_Should_Return_The_Workspaces(string responseJson)
         {
         }
